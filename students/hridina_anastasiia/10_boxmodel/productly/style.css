@@ -1,7 +1,7 @@
 .container {
     max-width: 1200px;
-    height: 80px;
     margin: 0 auto;
+    padding: 15px;
 }
 
 .logo__left {
@@ -65,52 +65,49 @@
 }
 
 .footer {
-    max-width: 1440px;
-    padding: 70px 120px;
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+    display: inline-block;
 }
 
 .footer__logo {
     float: left;
+    padding-left: 100px;
 }
 
 .block__one,
 .block__two {
-    text-align: left;
-    float: left;
-    padding: 30px;
-    margin: 0 auto;
-}
-
-.quick__links {
+    line-height: 30px;
     display: inline-block;
-    list-style-type: none;
-    text-decoration: none;
 }
 
+.quick__links,
 .legal__staff {
-    display: inline-block;
+    display: inline;
     list-style-type: none;
+}
+
+.block__links a {
     text-decoration: none;
 }
 
-.block__one,
-.block__two::after {
-    content: '';
-    display: block;
-    clear: both;
+.block__links a:link {
+    color: black;
+}
+
+.block__links a:visited {
+    color: black;
+}
+
+.block__links a:hover {
+    color: #f90;
 }
 
 .input {
-    float: right;
     width: 340px;
     padding-bottom: 30px;
     box-sizing: border-box;
-}
-
-.input::after {
-    content: '';
-    display: block;
-    clear: both;
 }
 
 .button3 {
@@ -120,19 +117,12 @@
     border-radius: 4px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    margin-left: 32px;
+    display: inline;
 }
 
 .buttons {
     float: right;
-    width: 340px;
-}
-
-.buttons::after {
-    content: '';
-    display: block;
-    clear: both;
+    width: 28%;
 }
 
 input[type=number] {
