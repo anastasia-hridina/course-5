@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denis Novik</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <style>
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: Montserrat;
             font-size: 18px;
             line-height: normal;
             letter-spacing: .5px;
@@ -19,30 +22,31 @@
 
 <body>
     <header class="header">
-        <nav class="nav">
-            <ul class="menu">
-                <li class="menu__item">
-                    <a href="index.html#" class="menu__link">Home</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#about me" class="menu__link">About me</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#skills" class="menu__link">Skills</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#portfolio" class="menu__link">Portfolio</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#contacts" class="menu__link">Contacts</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#aboutme" class="menu__link">About me</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#skills" class="menu__link">Skills</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#portfolio" class="menu__link">Portfolio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#contacts" class="menu__link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
     <main>
         <section>
-            <div class="container">
+            <div class="container__heading">
                 <h1 class="heading">Denis Novik</h1>
                 <img src="./images/denis_novik_photo.jpg" width="943" height="387" alt="Denis Novik">
             </div>
