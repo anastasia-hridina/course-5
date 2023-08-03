@@ -1,0 +1,32 @@
+.sign__in {
+    border: 1px solid $color-lightblue;
+    background-color: $color-white;
+    color: $color-black;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 13px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    width: 110px;
+    height: 46px;
+    transition-duration: .4s;
+    cursor: pointer;
+    margin-right: 32px;
+
+    &:hover {
+        background-color: $color-lightblue;
+        color: $color-white;
+        border: 1px solid skyblue;
+    }
+
+}
+
+.sign__up {
+    @include button-orng;
+    padding: 13px 25px;
+    font-weight: 600;
+    width: 110px;
+    height: 46px;
+    text-decoration: none;
+}
