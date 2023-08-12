@@ -1,6 +1,4 @@
 .heading {
-    margin: 0 auto;
-    max-width: 450px;
 
     &__top {
         text-align: center;
@@ -14,41 +12,38 @@
     }
 
     &__bottom {
-        margin: 0;
+        margin: 0 auto;
         color: $color-gold;
         text-align: center;
         font-family: 'Roboto', $fallback;
         font-size: 60px;
         font-weight: 900;
         line-height: 66px;
+        padding-bottom: 40px;
         text-transform: uppercase;
+        position: relative;
 
-    }
-}
+        &::after {
+            content: '';
+            border-bottom: 1px solid $color-gold;
+            position: absolute;
+            width: 450px;
+            top: 100px;
+            right: -25%;
+            z-index: -1;
+        }
 
-.horizontal-line {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-        left: 330px;
-        bottom: 15px;
-        max-width: 210px;
-        width: 100%;
-        border: 1px solid $color-gold;
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        right: 330px;
-        bottom: 15px;
-        max-width: 210px;
-        width: 100%;
-        border: 1px solid $color-gold;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../images/bonfire-sharp.svg);
+            border-left: 5px solid $color-white;
+            border-right: 5px solid $color-white;
+            padding: 40px 7px;
+            background-repeat: no-repeat;
+            background-position: center;
+            top: 60px;
+            left: 46%;
+        }
     }
 }

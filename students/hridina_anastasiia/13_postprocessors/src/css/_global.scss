@@ -43,17 +43,20 @@ body {
 
 .row {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    gap: 150px;
 }
 
 .col-12 {
-    max-width: 1170px;
-    width: 100%;
+    max-width: $container-max-width;
     padding: $container-padding;
 }
 
 .col-6 {
-    max-width: 1030px;
-    width: 100%;
-    padding-left: 85px;
+    position: relative;
+    padding-top: 50px;
+}
+
+img {
+    max-width: 100%;
 }

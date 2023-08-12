@@ -1,18 +1,22 @@
-.vertical-line {
-    position: relative;
-    padding: 15px;
-
-    &::after {
+.line {
+    &::before {
         content: '';
-        position: absolute;
-        top: -250px;
         border-left: 1px solid $color-gold;
         height: 560px;
+        position: absolute;
+        left: -75px;
+        top: 0;
     }
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .fullname {
-    text-align: center;
     vertical-align: text-top;
     font-family: $default-font-name;
     color: $color-gray;
@@ -22,12 +26,13 @@
     padding-bottom: 30px;
     position: relative;
 
+
     &::after {
         content: '';
         border-bottom: 1px solid $color-gold;
         width: 100px;
         padding-bottom: 65px;
-        left: 210px;
+        left: 60px;
         position: absolute;
     }
 }
@@ -35,7 +40,6 @@
 .skill {
     padding-top: 30px;
     padding-bottom: 30px;
-    text-align: center;
     font-family: 'Raleway', $fallback;
     color: $color-gray;
     font-size: 24px;
@@ -55,49 +59,53 @@
 }
 
 .description {
-    text-align: center;
+    width: 430px;
+    height: 116px;
     color: $color-darkgray;
     font-family: 'Raleway', $fallback;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
     padding-bottom: 20px;
-}
-
-.divider {
     position: relative;
-    display: flex;
-    content: '';
-    max-width: 20px;
-    left: calc(50% - 10px);
-    width: 100%;
-    border-bottom: 4px solid $color-gold;
+    text-align: center;
 
-    &::before {
-        position: absolute;
-        content: '';
-        max-width: 10px;
-        width: 100%;
-        left: calc(50% - 25px);
-        border-bottom: 4px solid $color-gold;
-    }
-
+    &::before,
     &::after {
         position: absolute;
         content: '';
-        max-width: 10px;
-        width: 100%;
-        right: calc(50% - 25px);
-        border-bottom: 4px solid $color-gold;
+        background-color: $color-gold;
+        height: 4px;
     }
+
+    &::after {
+        width: 30px;
+        bottom: -20px;
+        right: 46%;
+        border-left: 5px solid $color-white;
+        border-right: 5px solid $color-white;
+        z-index: 1;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 50px;
+        bottom: -20px;
+        left: 44.6%;
+        z-index: -1;
+    }
+
 }
+
+
 
 .button {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
-button {
+.button__profile {
     text-align: center;
     color: $color-gray;
     font-family: 'Open Sans', $fallback;
