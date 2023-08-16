@@ -1,0 +1,36 @@
+// colors
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-grey: #565656;
+$color-lightgrey: #F4F4F4;
+
+$default-body-color: $color-white;
+
+$border-height: 50px;
+$btn-font-weight: 600;
+
+// fonts
+$default-font-name: 'Lato';
+$fallback: Arial, Helvetica, sans-serif;
+$default-font-size: 19px;
+$title-font-name: 'Red Hat Display';
+
+$main-font: $default-font-name, $fallback;
+$font-path: './fonts/';
+
+// containers
+$container-padding: 15px;
+$container-max-width: 1170px;
+
+$gap: 15px;
+$default-count-col: 12;
+
+$default-width: 1200px;
+
+$breack-points: (
+    "lg": 1200px,
+    "md": 992px,
+    "sm": 768px,
+    "xs": 576px,
+    "xxs": 480px
+);
