@@ -4,7 +4,6 @@ import 'lightbox2';
 import button from './galleryButton.js';
 import createFormValidation from './formValidation.js';
 
-
 const addForm = document.querySelector('.form');
 
 createFormValidation(addForm, getUserInfo);
@@ -19,11 +18,11 @@ $(".hero-slider").slick({
     slidesToShow: 1,
     slideToScroll: 1,
     adaptiveHeight: true,
-    pauseOnHover: false,
+    pauseOnHover: true,
     verticalSwiping: false,
     arrows: false,
     vertical: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     infinite: true
 });
@@ -32,7 +31,7 @@ $(".hero-slider").slick({
 $('.article-wrapper').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     infinite: true,
     autoplaySpeed: 3000,
     dots: true,
@@ -51,7 +50,7 @@ $('.article-wrapper').slick({
             breakpoint: 1024,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true,
                 arrows: false
@@ -61,7 +60,7 @@ $('.article-wrapper').slick({
             breakpoint: 992,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true,
                 arrows: false
@@ -71,7 +70,7 @@ $('.article-wrapper').slick({
             breakpoint: 768,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true,
                 arrows: false,
